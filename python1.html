@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kod Ýoly</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container{
+  width: 380px;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container h2{
+  background: white;
+  color: #3498db;
+  padding: .7rem;
+}
+  
+.container .bar{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  font-size: 1.5rem;
+  border-bottom: solid 3px #3894db;
+}
+
+.container .bar p.name{
+  color: #3894db;
+}
+
+.container .bar i{
+  color: #3894db;
+  cursor: pointer;
+}
+
+.container .onki-indiki{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+  
+.container .onki-indiki a{
+  border: none;
+  padding: .7rem 1.5rem;
+  background: #3498db;
+  cursor: pointer;
+  color: white;
+  border-radius: .6rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+ul.display{
+  list-style: none;
+  flex-grow: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+ul.display h1{
+  margin-top: 10px;
+  margin-left: 11px;
+}
+  
+ul.display h2{
+  color: black;
+}
+  
+ul.display p{
+  margin-left: 11px;
+  position: relative;
+  line-height: 1.5;
+}
+  
+ul.display h3{
+  margin-left: 11px;
+}
+  
+ul.display p.li{
+  margin-left: 31px;
+  position: relative;
+  width: 90%;
+  line-height: 1.5;
+}
+  
+.container .code{
+  background-color: #e7e9eb;
+  margin-left: 11px;
+  padding: 0rem 0rem 2rem 0rem;
+  width: 93%;
+  border-radius: .7rem;
+}
+  
+.container .code h2{
+  background-color: #e7e9eb;
+  border-radius: .7rem;
+}
+  
+.container .code pre{
+  font-family: monospace;
+  background-color: white;
+  border-left: solid .3rem #3498db;
+  border-radius: .1rem;
+  padding: .3rem 0rem .3rem 1.2rem;
+  overflow-x: scroll;
+  margin-left: 11px;
+  width: 95%;
+  min-width: 95%;
+}
+  
+.onki-indiki svg.cep{
+  width: 1.3rem;
+  height: 1.3rem;
+}
+  
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bar">
+      <p class="name"><b> Kod Ýoly</b></p>
+      <a href="/storage/emulated/0/A%20Site/Home.html"><i class="fa fa-home"></i></a>
+    </div>
+    <ul class="display">
+      <h1>Pythona Giriş</h1>
+      <div class="onki-indiki">
+        <a href="/storage/emulated/0/A%20Site/Home.html"><b>⟨ Menýu</b></a>
+        <a href="python2.html"><b>Indiki ⟩</b></a>
+      </div>
+      <hr>
+      <h2>Python näme?</h2>
+      <p>Python meşhur bir programmalaşdyrma dilidir. Guido van Rossum tarapyndan döredildi we 1991-nji ýylda işe girizildi.
+      </p><br>
+      <h3>Python bilen nämeler edip bolar?</h3><br>
+      <p class="li">•  Python, web programmalary döretmek üçin ulanyp bolar.
+<br>•  Python, maglumat bazasy(database) ulgamlaryna birigip bilýär. Şeýle hem faýllary okap we üýtgedip bilýär.
+<br>•  Python, uly maglumatlaryň üstünde işlemek we çylşyrymly matematika mysallaryny çözmek üçin ulanyp bolýar.
+<br>•  Python, çalt prototip döretmek ýa-da önümçilige taýýar programmalary özgertmek üçin ulanylyp biliner.
+      </p><br>
+      <h3>Näme üçin Python?</h3><br>
+      <p class="li">•  Python üýtgeşik platformalarda (Windows, Mac, Linux, Raspberry Pi we ş.m.) işleýär.
+<br>•  Pythonyň iňlis diline meňzeş ýönekeý söz düzümi bardyr.
+<br>•  Python, programmistleriň beýleki käbir programmalaşdyrma dillerine seredeňde has-da az setir bilen programmalar ýazmagyna mümkinçilik döretýän söz düzümine eýedir.
+<br>•  Python prosessual, obýektiw ýa-da funksional usul bilen işlenip bilner.
+      </p><br>
+      <h3>Esasy bilmeli zatlar</h3><br>
+      <p class="li">•  Pythonyň iň täze esasy wersiýasy, bu derslerde ulanjagymyz Python 3-dir. Emma Python 2 hem, howpsuzlyk täzelenmeleriden başga bir täzelenme almasa-da şuwagt hem meşhurdyr.
+<br>•  Bu dersde Python kodlaryny bir text redaktorynda ýazyljakdyr. Python kodlaryny, esasan, has uly Python faýllar toplumyny döretmekde peýdaly bolan <b>Visual Studio Code, Thonny, PyCharm, NetBeans</b> ýa-da <b>Eclipse</b> ýaly programmalarda ýazmak mümkindir.
+<br>•  Eger-de siziň kompýuteriňiz ýok bolsa, onda android telefonuňyzda <b>Pydroid3</b> ýa-da <b>PyCode</b> IDE-lerini ulanyp bilersiňiz.
+      </p><br>
+      <h3>Beýleki programmalaşdyrma dilleri bilen deňeşdirilende Python söz düzümi</h3><br>
+      <p class="li">• Python kodlary okap bilerlik üçin döredilen we matematikanyň täsir edýän iňlis dili bilen käbir meňzeşlikleri bar.
+<br>• Python köplenç nokatly otur(;) ýa-da ýaý( () ) ulanýan beýleki programmalaşdyrma dilleriniň tersine, bir komandany tamamlamak üçin täze setir (<i class="fa fa-arrow-alt-circle-down"> Enter</i>) ulanýar.
+<br>• Python koduň giňişligini kesgitlemek üçin boşluklary ulanýan indentasiýa esaslanýar; gaýtalanmagyň, funksiýalaryň we synplaryň gerimi ýaly. Beýleki programmalaşdyrma dilleri bu maksat üçin köplenç egri ýaýlary({}) ulanýarlar.
+      </p><br>
+      <div class="code">
+        <h2>Meselem</h2>
+        <pre>print("Hello World!")</pre>
+      </div>
+      <br>
+      <hr>
+      <div class="onki-indiki">
+        <a href="/storage/emulated/0/A%20Site/Home.html"><b><svg class="cep" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg> Menýu</b></a>
+        <a href="python2.html"><b>Indiki ⟩</b></a>
+      </div>
+    </ul>
+</body>
+</html>
